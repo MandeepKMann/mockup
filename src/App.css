@@ -14,7 +14,6 @@ html {
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
 
@@ -22,18 +21,53 @@ ul {
     list-style: none;
 }
 
+/* Blog List Styles */
+
+.blogListSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blogList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blogRow {
+    display: flex;
+}
+
+.blogInfo {
+    display: flex;
+    gap: 50px;
+}
+
+.blogText {
+    width: 50%;
+}
+
+.blogImgContainer {
+    width: 200px;
+    height: 200px;
+}
 
 /* Footer Styles */
 
 footer {
     background-color: #152c53;
-    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 footer p {
     color: white;
     width: 50%;
     text-align: left;
+}
+
+footer a {
+    color: white;
 }
 
 .footerContent {
