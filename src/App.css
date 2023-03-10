@@ -21,6 +21,30 @@ ul {
     list-style: none;
 }
 
+/* Nav Menu Styles */
+
+.navFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 80px;
+}
+
+.loginServices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
 /* Blog List Styles */
 
 h3 {
