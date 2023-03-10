@@ -23,6 +23,10 @@ ul {
 
 /* Blog List Styles */
 
+h3 {
+    text-align: left;
+}
+
 .blogListSection {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -34,13 +38,21 @@ ul {
     gap: 10px;
 }
 
+
 .blogRow {
+    border-bottom: 1px solid #152c53;
     display: flex;
+    padding-bottom: 10px;
 }
+
+.blogRow:nth-child(3) {
+    border-bottom: none;
+}
+
 
 .blogInfo {
     display: flex;
-    gap: 50px;
+    gap: 10%;
 }
 
 .blogText {
