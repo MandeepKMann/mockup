@@ -8,22 +8,21 @@ import { useState } from 'react';
 
 function App() {
 
-    const [blog, setBlog] = useState("");
+    const [blogLink, setBlogLink] = useState("");
+    
+    console.log(blogLink)
 
     return (
         <Routes>
             <Route 
                 path="/" 
-                element={<Home setBlog={setBlog} />} 
+                element={<Home setBlogLink={setBlogLink} blogLink={blogLink} />} 
             />
 
             <Route 
                 path="/blog/" 
-                element={<Blog />}
-                setBlog={setBlog}
-                >    
-                {/* <Route path="blogone" element={} /> */}
-            </Route>
+                element={<Blog setBlogLink={setBlogLink} blogLink={blogLink}/>}
+                />    
         </Routes>
 
     );

@@ -4,7 +4,7 @@ import HeaderBanner from './components/HeaderBanner.js';
 import NavMenu from './components/NavMenu.js';
 import Carousel from './components/Carousel.js';
 
-const Home = ({setBlog}) => {
+const Home = ({setBlogLink, blogLink}) => {
 
     return (
         <>
@@ -13,7 +13,10 @@ const Home = ({setBlog}) => {
                 <NavMenu />
             </header>
             <Carousel />
-            <BlogList setBlog={setBlog}/>
+            <BlogList 
+                setBlogLink={setBlogLink} 
+                blogLink={blogLink}
+            />
             <Footer />
         </>
     )

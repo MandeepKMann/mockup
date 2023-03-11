@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-const BlogList = ({setBlog}) => {
+const BlogList = ({setBlogLink, blogLink}) => {
 
     const clickHandler = (e) => {
-        const link = e.target.id
-        console.log(link)
+        const linkId = e.target.id
+        setBlogLink(linkId)
     }
+
 
     return (
         <section className="blogListSection">
