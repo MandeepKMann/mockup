@@ -1,8 +1,8 @@
 const Carousel = () => {
     return (
-        <secion className="carouselSection">
+        <section className="carouselSection">
             
-        </secion>
+        </section>
     )
 
 }

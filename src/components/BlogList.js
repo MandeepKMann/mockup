@@ -1,4 +1,12 @@
-const BlogList =  () => {
+import { Link } from "react-router-dom";
+
+const BlogList = ({setBlog}) => {
+
+    const clickHandler = (e) => {
+        const link = e.target.id
+        console.log(link)
+    }
+
     return (
         <section className="blogListSection">
             <div className="wrapper">
@@ -12,7 +20,7 @@ const BlogList =  () => {
                             </div>
                             <div className="blogText">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                                <a href="">Blog Post 1</a>
+                                <Link to="/blog" id="blog1" onClick={clickHandler}>Blog One</Link>
                             </div>
                         </div>
                         <div className="blogInfo">
@@ -21,7 +29,7 @@ const BlogList =  () => {
                             </div>
                             <div className="blogText">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                                <a href="">Blog Post 2</a>
+                                <Link to="/blog" id="blog2" onClick={clickHandler}>Blog Two</Link>
                             </div>
                         </div>                        
                     </div>
@@ -32,7 +40,7 @@ const BlogList =  () => {
                             </div>
                             <div className="blogText">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                                <a href="">Blog Post 3</a>
+                                <Link to="/blog" id="blog3" onClick={clickHandler}>Blog Three</Link>
                             </div>
                         </div>
                         <div className="blogInfo">
@@ -41,7 +49,7 @@ const BlogList =  () => {
                             </div>
                             <div className="blogText">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                                <a href="">Blog Post 4</a>
+                                <Link to="/blog" id="blog4" onClick={clickHandler}>Blog Four</Link>
                             </div>
                         </div>                        
                     </div>
@@ -52,7 +60,7 @@ const BlogList =  () => {
                             </div>
                             <div className="blogText">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                                <a href="">Blog Post 5</a>
+                                <Link to="/blog" id="blog5" onClick={clickHandler}>Blog Five</Link>
                             </div>
                         </div>
                         <div className="blogInfo">
@@ -61,7 +69,7 @@ const BlogList =  () => {
                             </div>
                             <div className="blogText">
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
-                                <a href="">Blog Post 6</a>
+                                <Link to="/blog" id="blog6" onClick={clickHandler}>Blog Six</Link>
                             </div>
                         </div>                        
                     </div>                                                       

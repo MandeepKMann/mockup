@@ -4,7 +4,8 @@ import HeaderBanner from './components/HeaderBanner.js';
 import NavMenu from './components/NavMenu.js';
 import Carousel from './components/Carousel.js';
 
-const Home = () => {
+const Home = ({setBlog}) => {
+
     return (
         <>
             <header>
@@ -12,7 +13,7 @@ const Home = () => {
                 <NavMenu />
             </header>
             <Carousel />
-            <BlogList />
+            <BlogList setBlog={setBlog}/>
             <Footer />
         </>
     )
