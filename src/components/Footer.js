@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook, faTwitter, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+
 const Footer = () => {
     return (
         <footer>
@@ -10,10 +13,10 @@ const Footer = () => {
 
                         <div className="footerUl">
                             <ul className="socialLinks">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Whatsapp</a></li>
+                                <li><a href="#"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                                <li><a href="#"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                                <li><a href="#"><FontAwesomeIcon icon={faInstagram}/></a></li>
+                                <li><a href="#"><FontAwesomeIcon icon={faWhatsapp}/></a></li>
                             </ul>
 
                             <ul className="contactLinks">

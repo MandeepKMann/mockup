@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom';
 import Footer from './components/Footer.js';
 import NavMenu from './components/NavMenu.js';
 import blogContent from './blogContent.js';
@@ -14,52 +13,34 @@ const Blog = ({blogLink}) => {
                 if (blogPost.id === blogLink) {
                     return (
                         <div className="dynamicPost" key={blogPost.id}>
-                            <div className="title">{blogPost.title}</div>
+                            <div className="wrapper">
+                                <h1 className="title">{blogPost.title}</h1>
+                            </div>
                             <div className="postImageContainer">
                                 <img src={blogPost.src} alt={blogPost.alt} />
                             </div>
-                            <div className="postText">{blogPost.content}</div>
+                            <div className="subtitleContainer">
+                                <div className="wrapper">
+                                    <p className="subtitle">{blogPost.subtitle}</p>
+                                </div>
+                            </div>
+                            <div className="wrapper">
+                                <div className="postText">{blogPost.content}</div>
+                            </div>
                         </div>
 
                     )
+                } else {
+                    return (
+                        null
+                    )
                 }
             })
-
             }
 
-
-            {/* <Outlet /> */}
             <Footer />
         </>
     )
-    // class BlogPost {
-    //     constructor(title, image, src, subtitle, content) {
-    //         this.title = title
-    //         this.image = image
-    //         this.src = src,
-    //         this.subtitle = subtitle
-    //         this,content = content
-    //     }
-    //     getTitle = () => {
-    //         return this.title;
-    //     }
-    //     getImage = () => {
-    //         return this.title;
-    //     }
-    //     getSrc = () => {
-    //         return this.title;
-    //     }
-    //     getSubtitle = () => {
-    //         return this.title;
-    //     }
-    //     getContent = () => {
-    //         return this.title;
-    //     }
-    // }
-
-    // const blog1 = new BlogPost ("Blog One", )
-
-
 }
 
 export default Blog;
