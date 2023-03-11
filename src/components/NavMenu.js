@@ -16,16 +16,16 @@ const NavMenu = () => {
                     </div>
                     <ul className="navLinks">
                         <Link to="/">Home</Link>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><a href="https://github.com/MandeepKMann/mockup">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/mandeepkmann/">LinkedIn</a></li>
+                        <li><a href="https://findtheinvisiblecow.com/">Find the Cow</a></li>
+                        <li><a href="https://explore.org/livecams/cats/kitten-rescue-cam">Kitten Cam</a></li>
                     </ul>
                 </div>
 
                 <div className="loginServices navRight">
                     <button>Subscribe</button>
-                    <a href="#">Sign in</a>
+                    <a href="https://github.com/MandeepKMann/mockup">Sign in</a>
                 </div>
             </div>
         </nav>

@@ -13,24 +13,24 @@ const Footer = () => {
 
                         <div className="footerUl">
                             <ul className="socialLinks">
-                                <li><a href="#"><FontAwesomeIcon icon={faFacebook}/></a></li>
-                                <li><a href="#"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                                <li><a href="#"><FontAwesomeIcon icon={faInstagram}/></a></li>
-                                <li><a href="#"><FontAwesomeIcon icon={faWhatsapp}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faInstagram}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faWhatsapp}/></a></li>
                             </ul>
 
                             <ul className="contactLinks">
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup">Link</a></li>
                             </ul>
                         </div>
 
