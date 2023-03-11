@@ -17,7 +17,7 @@ const blogContent = [
     {
     id: "blog2",
     title: "Blog Two Title",
-    src: "https://placebear.com/1915/500",
+    src: "https://placebear.com/1915/600",
     alt: "A placeholder of a bear",
     subtitle: "Blog Two Subtitle",
     content: (
@@ -32,7 +32,7 @@ const blogContent = [
     {
     id: "blog3",
     title: "Blog Three Title",
-    src: "https://placebear.com/1915/500",
+    src: "https://placebear.com/1915/600",
     alt: "A placeholder of a bear",
     subtitle: "Blog Three Subtitle",
     content: (
@@ -47,7 +47,7 @@ const blogContent = [
     {
     id: "blog4",
     title: "Blog Four Title",
-    src: "https://placebear.com/1915/500",
+    src: "https://placebear.com/1915/600",
     alt: "A placeholder of a bear",
     subtitle: "Blog Four Subtitle",
     content: (
@@ -62,7 +62,7 @@ const blogContent = [
     {
     id: "blog5",
     title: "Blog Five Title",
-    src: "https://placebear.com/1915/500",
+    src: "https://placebear.com/1915/600",
     alt: "A placeholder of a bear",
     subtitle: "Blog Five Subtitle",
     content: (
@@ -77,7 +77,7 @@ const blogContent = [
     {    
     id: "blog6",
     title: "Blog Six Title",
-    src: "https://placebear.com/1915/500",
+    src: "https://placebear.com/1915/600",
     alt: "A placeholder of a bear",
     subtitle: "Blog Six Subtitle",
     content: (

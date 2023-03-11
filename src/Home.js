@@ -3,6 +3,8 @@ import Footer from './components/Footer.js';
 import HeaderBanner from './components/HeaderBanner.js';
 import NavMenu from './components/NavMenu.js';
 import Carousel from './components/Carousel.js';
+import bears from './carouselContent.js'
+
 
 const Home = ({setBlogLink, blogLink}) => {
 
@@ -12,7 +14,7 @@ const Home = ({setBlogLink, blogLink}) => {
                 <HeaderBanner />
                 <NavMenu />
             </header>
-            <Carousel />
+            <Carousel images={bears}/>
             <BlogList 
                 setBlogLink={setBlogLink} 
                 blogLink={blogLink}
