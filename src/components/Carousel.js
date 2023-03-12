@@ -44,6 +44,23 @@ const Carousel = ({images}) => {
                     })}
                     <div className="carouselArrowLeft" onClick={slideLeft}>&lsaquo;</div>
                     <div className="carouselArrowRight" onClick={slideRight}>&rsaquo;</div>
+                    <div className="carouselPagination">
+                        {images.map((images, index) => {
+                            return (
+                                <div 
+                                    key={index}
+                                    className={
+                                    index == currentSlide 
+                                    ? "paginationDot paginationDot--active" 
+                                    : "paginationDot"
+                                    }
+                                >
+                                        
+
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
