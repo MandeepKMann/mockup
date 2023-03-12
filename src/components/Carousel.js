@@ -42,7 +42,7 @@ const Carousel = ({images}) => {
     return (
         <section className="carouselSection">
             <div 
-                className="carousel"
+                className="carousel wrapper"
                 onMouseEnter={() => {
                     setAutoPlay(false)
                     clearTimeout(timeOutRef.current)
@@ -51,7 +51,7 @@ const Carousel = ({images}) => {
                     setAutoPlay(true)
                 }}
             >
-                <div className="carouselWrapper wrapper">
+                <div className="carouselSlides">
                     {images.map((image, index) => {
                         return (
                             <div 
