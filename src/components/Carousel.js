@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import bears from '../carouselContent'
+import bears from '../carouselContent.js'
 
 
 // https://www.youtube.com/watch?v=SAWQ_LmyY2Q
@@ -69,13 +69,14 @@ const Carousel = ({images}) => {
                             </div>
                         )
                     })}
-                    <div className="carouselArrowLeft" onClick={slideLeft}>&lsaquo;</div>
-                    <div className="carouselArrowRight" onClick={slideRight}>&rsaquo;</div>
+                    <div className="carouselArrowLeft" tabIndex="1" onClick={slideLeft}>&lsaquo;</div>
+                    <div className="carouselArrowRight" tabIndex="1" onClick={slideRight}>&rsaquo;</div>
                     <div className="carouselPagination">
                         {images.map((images, index) => {
                             return (
                                 <div 
                                     key={index}
+                                    tabIndex="1"
                                     className={
                                     index == currentSlide 
                                     ? "paginationDot paginationDot--active" 

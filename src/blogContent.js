@@ -3,8 +3,10 @@ const blogContent = [
     id:"blog1",
     title: "Blog One Title",
     src: "https://placebear.com/1915/600",
+    previewImg: "https://placebear.com/200/200",
     alt: "A placeholder of a bear",
     subtitle: "Blog One Subtitle",
+    previewText: "Blog One Content Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     content: (
         <>
         <p>Blog One Content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat!</p> 
@@ -18,8 +20,10 @@ const blogContent = [
     id: "blog2",
     title: "Blog Two Title",
     src: "https://placebear.com/1915/600",
+    previewImg: "https://placebear.com/200/200",
     alt: "A placeholder of a bear",
     subtitle: "Blog Two Subtitle",
+    previewText: "Blog Two Content Lorem ipsum dolor sit amet consectetur, adipisicing elit.",    
     content: (
         <>
         <p>Blog Two Content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat!</p> 
@@ -33,8 +37,10 @@ const blogContent = [
     id: "blog3",
     title: "Blog Three Title",
     src: "https://placebear.com/1915/600",
+    previewImg: "https://placebear.com/200/200",
     alt: "A placeholder of a bear",
     subtitle: "Blog Three Subtitle",
+    previewText: "Blog Three Content Lorem ipsum dolor sit amet consectetur, adipisicing elit.",    
     content: (
         <>
         <p>Blog Three Content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat!</p> 
@@ -48,8 +54,10 @@ const blogContent = [
     id: "blog4",
     title: "Blog Four Title",
     src: "https://placebear.com/1915/600",
+    previewImg: "https://placebear.com/200/200",
     alt: "A placeholder of a bear",
     subtitle: "Blog Four Subtitle",
+    previewText: "Blog Four Content Lorem ipsum dolor sit amet consectetur, adipisicing elit.",    
     content: (
         <>
         <p>Blog Four Content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat!</p> 
@@ -63,8 +71,10 @@ const blogContent = [
     id: "blog5",
     title: "Blog Five Title",
     src: "https://placebear.com/1915/600",
+    previewImg: "https://placebear.com/200/200",
     alt: "A placeholder of a bear",
     subtitle: "Blog Five Subtitle",
+    previewText: "Blog Five Content Lorem ipsum dolor sit amet consectetur, adipisicing elit.",    
     content: (
         <>
         <p>Blog Five Content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat!</p> 
@@ -78,8 +88,10 @@ const blogContent = [
     id: "blog6",
     title: "Blog Six Title",
     src: "https://placebear.com/1915/600",
+    previewImg: "https://placebear.com/200/200",
     alt: "A placeholder of a bear",
     subtitle: "Blog Six Subtitle",
+    previewText: "Blog Six Content Lorem ipsum dolor sit amet consectetur, adipisicing elit.",    
     content: (
         <>
         <p>Blog Six Content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, corporis et? Deserunt aspernatur esse omnis, iure eos quibusdam a nesciunt magnam debitis pariatur numquam quod! Dicta debitis aspernatur distinctio fugiat!</p> 

@@ -341,11 +341,11 @@ footer a {
     cursor: pointer;
 }
 
-/* .paginationDot:hover
+.paginationDot:hover
 .paginationDot:focus {
     transform: scale(1.2);
     background-color: #152c53;
-} */
+}
 
 .paginationDot--active{
     transform: scale(1.7);
