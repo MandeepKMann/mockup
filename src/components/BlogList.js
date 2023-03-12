@@ -3,13 +3,6 @@ import blogContent from "../blogContent.js";
 
 const BlogList = ({setBlogLink, blogLink}) => {
 
-    //Finds the id of the clicked link and changes the state of the BlogLink to the target id
-    const clickHandler = (e) => {
-        const linkId = e.target.id
-        setBlogLink(linkId)
-        console.log(e.target.id)
-    }
-
     // https://stackoverflow.com/questions/34404289/map-array-sections-to-new-array
     // Determines the size and amount of sections I want to divie up my blogContent array into
     const numberOfSections = 3;
@@ -40,6 +33,7 @@ const BlogList = ({setBlogLink, blogLink}) => {
                                             </div>
                                             <div className="blogText">
                                                 <p>{blogPost.previewText}</p>
+                                                {/* Finds the id of the clicked link and changes the state of the BlogLink to the target id */}
                                                 <Link to="/blog" id={blogPost.id} onClick={(e) => {setBlogLink(e.target.id)}}>{blogPost.title}</Link>
                                             </div>
                                         </div>
