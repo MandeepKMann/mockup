@@ -13,24 +13,24 @@ const Footer = () => {
 
                         <div className="footerUl">
                             <ul className="socialLinks">
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer"><FontAwesomeIcon icon={faFacebook}/></a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faInstagram}/></a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup"><FontAwesomeIcon icon={faWhatsapp}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/></a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp}/></a></li>
                             </ul>
 
                             <ul className="contactLinks">
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
-                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="norefferer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
+                                <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer">Link</a></li>
                             </ul>
                         </div>
 
