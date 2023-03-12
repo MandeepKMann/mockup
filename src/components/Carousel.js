@@ -18,7 +18,7 @@ const Carousel = ({images}) => {
         timeOutRef.current = autoPlay && setTimeout(() => {
             slideRight()
         }, 3500)
-    }, [autoPlay])
+    }, )
 
     const slideLeft = () => {
         if (currentSlide === 0) {
