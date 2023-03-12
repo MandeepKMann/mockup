@@ -236,6 +236,7 @@ footer a {
     align-items: center;
     flex-direction: column;
     padding: 10px 0px;
+    background-color: #edf6f9;
 }
 
 .carouselSection h2 {

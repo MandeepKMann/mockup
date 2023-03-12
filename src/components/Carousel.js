@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import bears from '../carouselContent.js'
 
 
@@ -9,15 +9,16 @@ const Carousel = ({images}) => {
 
     const [autoPlay, setAutoPlay] = useState(true);
 
-    let timeOut = null;
+    //useRef allows timeOutRef to persist accross each render
+    const timeOutRef = useRef(null);
 
-
-
+    //sets the reference of the timeOutRef to setTimeOut that slides right
     useEffect(() => {
-        timeOut = autoPlay && setTimeout(() => {
+        //if autoPlay = true, change the timeOutRef.current from null to setTimeout with the cbf that calls slideRight every 3.5 seconds
+        timeOutRef.current = autoPlay && setTimeout(() => {
             slideRight()
         }, 3500)
-    })
+    }, [autoPlay])
 
     const slideLeft = () => {
         if (currentSlide === 0) {
@@ -45,7 +46,7 @@ const Carousel = ({images}) => {
                 className="carousel"
                 onMouseEnter={() => {
                     setAutoPlay(false)
-                    clearTimeout(timeOut)
+                    clearTimeout(timeOutRef.current)
                 }}
                 onMouseLeave={() => {
                     setAutoPlay(true)
@@ -78,7 +79,7 @@ const Carousel = ({images}) => {
                                     key={index}
                                     tabIndex="1"
                                     className={
-                                    index == currentSlide 
+                                    index === currentSlide 
                                     ? "paginationDot paginationDot--active" 
                                     : "paginationDot"
                                     }

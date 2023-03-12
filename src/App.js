@@ -9,8 +9,6 @@ import { useState } from 'react';
 function App() {
 
     const [blogLink, setBlogLink] = useState("");
-    
-    console.log(blogLink)
 
     return (
         <Routes>
@@ -21,7 +19,7 @@ function App() {
 
             <Route 
                 path="/blog/" 
-                element={<Blog setBlogLink={setBlogLink} blogLink={blogLink}/>}
+                element={<Blog setBlogLink={setBlogLink}/>}
                 />    
         </Routes>
 
