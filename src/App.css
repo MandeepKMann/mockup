@@ -263,7 +263,17 @@ footer a {
     height: 100%;
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.5s ease-in-out;
+}
+
+.carouselCard--active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
 }
 
 .carouselCard img {
@@ -283,5 +293,31 @@ footer a {
 
 .cardTitle {
     color: white;
+}
+
+.carouselArrowLeft,
+.carouselArrowRight {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-bottom: 11px;
+    cursor: pointer;
+
+}
+
+.carouselArrowLeft {
+    left: 15px;
+}
+
+.carouselArrowRight {
+    right: 15px;
 }
 
