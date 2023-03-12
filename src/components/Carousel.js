@@ -21,6 +21,10 @@ const Carousel = ({images}) => {
         }
     }
 
+    const paginationClick = (index) => {
+        setCurrentSlide(index)
+    }
+
     return (
         <section className="carouselSection">
             <div className="carousel">
@@ -54,6 +58,7 @@ const Carousel = ({images}) => {
                                     ? "paginationDot paginationDot--active" 
                                     : "paginationDot"
                                     }
+                                    onClick={() => paginationClick(index)}
                                 >
                                         
 

@@ -294,6 +294,7 @@ footer a {
 
 .cardTitle {
     color: white;
+    transform: translate(0%, 85%);
 }
 
 .carouselArrowLeft,
@@ -325,8 +326,8 @@ footer a {
 .carouselPagination {
     position: absolute;
     bottom: 5px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    right: 0%;
+    transform: translate(-30%, -30%);
 }
 
 .paginationDot {
@@ -340,7 +341,13 @@ footer a {
     cursor: pointer;
 }
 
-.paginationDot--active {
+/* .paginationDot:hover
+.paginationDot:focus {
+    transform: scale(1.2);
+    background-color: #152c53;
+} */
 
+.paginationDot--active{
+    transform: scale(1.7);
+    background-color: #152c53;
 }
-
