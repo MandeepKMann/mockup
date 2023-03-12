@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-import bears from '../carouselContent.js'
 
 
 // https://www.youtube.com/watch?v=SAWQ_LmyY2Q
@@ -22,14 +21,14 @@ const Carousel = ({images}) => {
 
     const slideLeft = () => {
         if (currentSlide === 0) {
-            setCurrentSlide(bears.length - 1)
+            setCurrentSlide(images.length - 1)
         } else {
             setCurrentSlide(currentSlide - 1)
         }
     }
 
     const slideRight = () => {
-        if (currentSlide === (bears.length - 1)) {
+        if (currentSlide === (images.length - 1)) {
             setCurrentSlide(0)
         } else {
             setCurrentSlide(currentSlide + 1)
@@ -73,7 +72,7 @@ const Carousel = ({images}) => {
                     <div className="carouselArrowLeft" tabIndex="1" onClick={slideLeft}>&lsaquo;</div>
                     <div className="carouselArrowRight" tabIndex="1" onClick={slideRight}>&rsaquo;</div>
                     <div className="carouselPagination">
-                        {images.map((images, index) => {
+                        {images.map((_, index) => {
                             return (
                                 <div 
                                     key={index}
