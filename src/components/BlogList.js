@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import blogContent from "../blogContent.js";
 
-const BlogList = ({setBlogLink}) => {
+const BlogList = ({setBlogLink, blogLink}) => {
 
     //Finds the id of the clicked link and changes the state of the BlogLink to the target id
     const clickHandler = (e) => {
         const linkId = e.target.id
         setBlogLink(linkId)
+        console.log(e.target.id)
     }
 
     // https://stackoverflow.com/questions/34404289/map-array-sections-to-new-array
@@ -19,9 +20,6 @@ const BlogList = ({setBlogLink}) => {
     for (let i = 0; i < blogContent.length; i += chunkSize) {
         jaggedArray.push(blogContent.slice(i, i + chunkSize));
     }
-    console.log(jaggedArray)
-
-
 
     return (
         <section className="blogListSection">
@@ -34,15 +32,15 @@ const BlogList = ({setBlogLink}) => {
                         return (
                             <div className="blogRow" key={index}>
                                 {/* map through  the sections to display content on page*/}
-                                {blogRow.map((blogPost, index) => {
+                                {blogRow.map((blogPost, subIndex) => {
                                     return (
-                                        <div className="blogInfo" key={index}>
+                                        <div className="blogInfo" key={subIndex}>
                                             <div className="blogImgContainer">
                                                 <img src={blogPost.previewImg} alt={blogPost.alt} />
                                             </div>
                                             <div className="blogText">
                                                 <p>{blogPost.previewText}</p>
-                                                <Link to="/blog" id={blogPost.id} onClick={clickHandler}>{blogPost.title}</Link>
+                                                <Link to="/blog" id={blogPost.id} onClick={(e) => {setBlogLink(e.target.id)}}>{blogPost.title}</Link>
                                             </div>
                                         </div>
                                     )
