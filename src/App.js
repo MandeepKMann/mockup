@@ -9,7 +9,6 @@ import { useState } from 'react';
 function App() {
 
     const [blogLink, setBlogLink] = useState("");
-    console.log(blogLink)
 
     return (
         <Routes>

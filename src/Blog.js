@@ -1,8 +1,15 @@
 import Footer from './components/Footer.js';
 import NavMenu from './components/NavMenu.js';
 import blogContent from './blogContent.js';
+import { useEffect } from 'react';
 
 const Blog = ({blogLink}) => {
+
+    // https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
             <header>
