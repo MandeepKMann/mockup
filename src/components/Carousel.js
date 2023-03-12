@@ -1,9 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import bears from '../carouselContent'
 
+
+// https://www.youtube.com/watch?v=SAWQ_LmyY2Q
 const Carousel = ({images}) => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
+
+    const [autoPlay, setAutoPlay] = useState(true);
+
+    let timeOut = null;
+
+
+
+    useEffect(() => {
+        timeOut = autoPlay && setTimeout(() => {
+            slideRight()
+        }, 3500)
+    })
 
     const slideLeft = () => {
         if (currentSlide === 0) {
@@ -27,14 +41,23 @@ const Carousel = ({images}) => {
 
     return (
         <section className="carouselSection">
-            <div className="carousel">
+            <div 
+                className="carousel"
+                onMouseEnter={() => {
+                    setAutoPlay(false)
+                    clearTimeout(timeOut)
+                }}
+                onMouseLeave={() => {
+                    setAutoPlay(true)
+                }}
+            >
                 <div className="carouselWrapper wrapper">
                     {images.map((image, index) => {
                         return (
                             <div 
                                 key={index} 
                                 className={
-                                    index == currentSlide 
+                                    index === currentSlide 
                                     ? "carouselCard carouselCard--active" 
                                     : "carouselCard"
                                 }
