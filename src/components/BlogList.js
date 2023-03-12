@@ -13,7 +13,7 @@ const BlogList = ({setBlogLink, blogLink}) => {
     // for (let i = 0; i < blogContent.length; i += chunkSize) {
     //     jaggedArray.push(blogContent.slice(i, i + chunkSize));
     // }
-    console.log(blogContent)
+    
     return (
         <section className="blogListSection">
             <div className="wrapper">
