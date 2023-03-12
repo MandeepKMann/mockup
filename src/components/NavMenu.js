@@ -12,7 +12,7 @@ const NavMenu = () => {
                         <FontAwesomeIcon icon={faBars} />
                     </div>
                     <div className="navImgContainer">
-                        <img src="https://placebear.com/100/50" alt="placeholder of a brown bear" />
+                        <img src="https://placebear.com/100/35" alt="placeholder of a brown bear" />
                     </div>
                     <ul className="navLinks">
                         <Link to="/">Home</Link>

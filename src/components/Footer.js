@@ -8,10 +8,10 @@ const Footer = () => {
                 <div className="footerContent">
                     <div className="footerLinks">
                         <div className="footerImgContainer">
-                            <img src="https://placebear.com/100/50" alt="placeholder of a brown bear" />
+                            <img src="https://placebear.com/100/35" alt="placeholder of a brown bear" />
                         </div>
 
-                        <div className="footerUl">
+                        <div className="footerListsContainer">
                             <ul className="socialLinks">
                                 <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook}/></a></li>
                                 <li><a href="https://github.com/MandeepKMann/mockup" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter}/></a></li>
