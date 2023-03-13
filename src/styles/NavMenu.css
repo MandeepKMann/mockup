@@ -40,6 +40,10 @@ nav a {
     align-items: center;
 }
 
+.navLinks a {
+    display: flex;
+}
+
 .loginServices {
     display: flex;
     flex-direction: row;
@@ -54,7 +58,18 @@ button {
 }
 
 @media (max-width: 1060px) {
-   nav a {
-    font-size: 0.8rem;
-   }
+    nav a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 950px) {
+    nav a,
+    button {
+        font-size: 0.7rem;
+    }
+
+    .navLinks {
+        gap: 10px;
+    }
 }

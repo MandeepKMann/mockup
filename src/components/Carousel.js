@@ -43,7 +43,7 @@ const Carousel = ({images}) => {
     return (
         <section className="carouselSection">
             <div 
-                className="carousel wrapper"
+                className="carousel"
                 onMouseEnter={() => {
                     setAutoPlay(false)
                     clearTimeout(timeOutRef.current)
