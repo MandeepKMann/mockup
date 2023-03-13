@@ -15,6 +15,12 @@ const BlogList = ({setBlogLink, blogLink}) => {
     //     jaggedArray.push(blogContent.slice(i, i + chunkSize));
     // }
     
+    // sets the state and stores the user selection in local storage
+    const clickHandler = (e) => {
+        setBlogLink(e.target.id)
+        localStorage.setItem("blogLink", e.target.id)
+    }
+
     return (
         <section className="blogListSection">
             <div className="wrapper">
@@ -34,7 +40,7 @@ const BlogList = ({setBlogLink, blogLink}) => {
                                         <div className="blogText">
                                             <p>{blogPost.previewText}</p>
                                             {/* Finds the id of the clicked link and changes the state of the BlogLink to the target id */}
-                                            <Link to="/blog" id={blogPost.id} onClick={(e) => {setBlogLink(e.target.id)}}>{blogPost.title}</Link>
+                                            <Link to="/blog" id={blogPost.id} onClick={clickHandler}>{blogPost.title}</Link>
                                         </div>
                                     </div>
                                 )

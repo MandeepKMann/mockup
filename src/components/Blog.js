@@ -2,12 +2,21 @@ import Footer from './Footer.js';
 import NavMenu from './NavMenu.js';
 import blogContent from '../blogContent.js';
 import { useEffect } from 'react';
+import '../styles/Blog.css'
 
-const Blog = ({blogLink}) => {
+const Blog = ({blogLink, setBlogLink}) => {
 
     // https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
     useEffect(() => {
         window.scrollTo(0, 0);
+    }, [])
+    
+    //allows blogLink to persist even if refreshed, getting data from localStorage
+    useEffect (() => {
+        const storedBlogLink = localStorage.getItem('blogLink')
+        if (storedBlogLink) {
+            setBlogLink(storedBlogLink)
+        }
     }, [])
 
     return (

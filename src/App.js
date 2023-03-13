@@ -2,7 +2,7 @@ import './App.css';
 import Home from './components/Home.js';
 import Blog from './components/Blog.js';
 import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -20,7 +20,7 @@ function App() {
             <Route 
                 path="/blog/" 
                 element={<Blog setBlogLink={setBlogLink} blogLink={blogLink}/>}
-                />    
+            /> 
         </Routes>
 
     );
