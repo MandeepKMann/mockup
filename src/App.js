@@ -19,6 +19,10 @@ function App() {
                 path="/blog/" 
                 element={<Blog setBlogLink={setBlogLink} blogLink={blogLink}/>}
             /> 
+            <Route 
+                path="/*"
+                element={<Home setBlogLink={setBlogLink} blogLink={blogLink} />}
+            />
         </Routes>
 
     );
