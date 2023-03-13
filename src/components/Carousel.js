@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 
 
 // https://www.youtube.com/watch?v=SAWQ_LmyY2Q
+//https://medium.com/tinyso/how-to-create-the-responsive-and-swipeable-carousel-slider-component-in-react-99f433364aa0
 const Carousel = ({images}) => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +12,7 @@ const Carousel = ({images}) => {
     //useRef allows timeOutRef to persist accross each render
     const timeOutRef = useRef(null);
 
-    //sets the reference of the timeOutRef to setTimeOut that slides right
+    // sets the reference of the timeOutRef to setTimeOut that slides right
     useEffect(() => {
         //if autoPlay = true, change the timeOutRef.current from null to setTimeout with the cbf that calls slideRight every 3.5 seconds
         timeOutRef.current = autoPlay && setTimeout(() => {
@@ -26,7 +27,6 @@ const Carousel = ({images}) => {
             setCurrentSlide(currentSlide - 1)
         }
     }
-
     const slideRight = () => {
         if (currentSlide === (images.length - 1)) {
             setCurrentSlide(0)
@@ -56,11 +56,8 @@ const Carousel = ({images}) => {
                         return (
                             <div 
                                 key={index} 
-                                className={
-                                    index === currentSlide 
-                                    ? "carouselCard carouselCard--active" 
-                                    : "carouselCard"
-                                }
+                                className="carouselCard"
+                                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                             >
                                 <img src={image.image} alt={image.alt} />
                                 <div className="cardOverlay">
