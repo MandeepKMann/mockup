@@ -17,7 +17,7 @@ const Blog = ({blogLink, setBlogLink}) => {
         if (storedBlogLink) {
             setBlogLink(storedBlogLink)
         }
-    }, [])
+    }, [setBlogLink])
 
     return (
         <>
