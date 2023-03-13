@@ -5,6 +5,10 @@ nav {
     background-color: #152c53;
 }
 
+nav ul {
+    padding-left: 0px;
+}
+
 nav a {
     color: white;
 }
@@ -32,7 +36,7 @@ nav a {
 
 .navLinks {
     display: flex;
-    gap: 80px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -47,4 +51,10 @@ button {
     background-color: white;
     border: 2px solid black;
     padding: 5px;
+}
+
+@media (max-width: 1060px) {
+   nav a {
+    font-size: 0.8rem;
+   }
 }

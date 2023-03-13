@@ -45,3 +45,14 @@ footer a {
 .contactLinks {
     gap: 30px;
 }
+
+@media (max-width: 1060px) {
+    footer a {
+        font-size: 0.8rem;
+    }
+
+    .contactLinks,
+    .socialinks {
+        gap: 10px;
+    }
+}

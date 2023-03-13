@@ -62,3 +62,10 @@ h3 {
     width: 200px;
     height: 200px;
 }
+
+@media (max-width: 1075px) {
+    .blogText p,
+    .blogText a {
+        font-size: 0.8rem;
+    }
+}
