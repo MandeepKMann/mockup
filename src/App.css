@@ -290,7 +290,6 @@ footer a {
     transition: transform 0.3s;
 }
 
-
 .carouselCard img {
     width: 100%;
     object-fit: cover;
@@ -304,7 +303,7 @@ footer a {
     display: flex;
     padding: 40px 30px;
     align-items: flex-end;
-    bottom: -3%;
+    bottom: -4%;
 }
 
 .cardTitle {
