@@ -1,6 +1,6 @@
 import './App.css';
-import Home from './Home.js';
-import Blog from './Blog';
+import Home from './components/Home.js';
+import Blog from './components/Blog.js';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 

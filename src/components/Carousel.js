@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import '../styles/Carousel.css';
 
 
 // https://www.youtube.com/watch?v=SAWQ_LmyY2Q

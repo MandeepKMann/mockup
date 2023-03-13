@@ -1,0 +1,10 @@
+/* Header Styles */
+
+.headerImgContainer {
+    width: 100%;
+}
+
+.headerImgContainer img {
+    max-width: 100%;
+    max-height: 100%;
+}

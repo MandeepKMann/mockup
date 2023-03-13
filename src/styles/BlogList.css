@@ -1,0 +1,64 @@
+/* Blog List Styles */
+
+h3 {
+    text-align: left;
+}
+
+.blogListSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blogListContainer {
+    position: relative
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.lineOne {
+    top: 33%;
+}
+
+.lineTwo {
+    top: 67%;
+}
+
+.blogList {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blogInfo {
+    display: flex;
+    gap: 10px;
+    width: calc((100% / 2) - 10px);
+}
+
+.blogText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.blogText p,
+.blogText a {
+    width: 80%;
+    margin-top: 0;
+}
+
+.blogText a {
+    font-weight: bold;
+}
+
+.blogImgContainer {
+    width: 200px;
+    height: 200px;
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import blogContent from "../blogContent.js";
+import '../styles/BlogList.css';
 
 const BlogList = ({setBlogLink, blogLink}) => {
 

@@ -1,0 +1,47 @@
+/* Footer Styles */
+
+footer {
+    background-color: #152c53;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    color: white;
+    width: 50%;
+    text-align: left;
+}
+
+footer a {
+    color: white;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks {
+    display: flex;
+    width: 100%;
+}
+
+.footerListsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.socialLinks,
+.contactLinks {
+    display: flex;
+    margin: 0px;
+}
+
+.socialLinks {
+    gap: 15px;
+}
+
+.contactLinks {
+    gap: 30px;
+}

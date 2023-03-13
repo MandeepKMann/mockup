@@ -1,3 +1,5 @@
+import '../styles/HeaderBanner.css'
+
 const HeaderBanner = () => {
     return (
         <div className="headerImgContainer">
