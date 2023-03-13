@@ -41,3 +41,7 @@
 .postText {
     width: 50%;
 }
+
+span {
+    font-weight: bold;
+}
