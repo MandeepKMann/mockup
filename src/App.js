@@ -3,7 +3,7 @@ import Home from './components/Home.js';
 import Blog from './components/Blog.js';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import blogContent from './blogContent.js';
+import blogData from './blogData.js';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
 
             <Route 
                 path="/blog/:id" 
-                element={<Blog setBlogLink={setBlogLink} blogLink={blogLink} data={blogContent}/>}
+                element={<Blog setBlogLink={setBlogLink} blogLink={blogLink} blogData={blogData}/>}
             /> 
             <Route 
                 path="/*"

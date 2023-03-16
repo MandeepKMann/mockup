@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom";
-import blogContent from "../blogContent.js";
+import blogData from "../blogData.js";
 import '../styles/BlogList.css';
 
-const BlogList = ({setBlogLink, blogLink}) => {
-    
-    // sets the state and stores the user selection in local storage
-    const clickHandler = (e) => {
-        setBlogLink(e.target.id)
-        localStorage.setItem("blogLink", e.target.id)
-    }
+const BlogList = () => {
 
     return (
         <section className="blogListSection">
@@ -20,7 +14,7 @@ const BlogList = ({setBlogLink, blogLink}) => {
                         <div className="line lineTwo"></div>
                 
                         <div className="blogList">
-                            {blogContent.map((blogPost, index) => {
+                            {blogData.map((blogPost, index) => {
                                 return (
                                     <div className="blogInfo" key={index}>
                                         <div className="blogImgContainer">
@@ -28,7 +22,6 @@ const BlogList = ({setBlogLink, blogLink}) => {
                                         </div>
                                         <div className="blogText">
                                             <p>{blogPost.previewText}</p>
-                                            {/* Finds the id of the clicked link and changes the state of the BlogLink to the target id */}
                                             <Link to={`/blog/${blogPost.id}`} id={blogPost.id}>{blogPost.title}</Link>
                                         </div>
                                     </div>

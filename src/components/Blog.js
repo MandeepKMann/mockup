@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import '../styles/Blog.css'
 import { useParams } from 'react-router-dom';
 
-const Blog = ({data}) => {
+const Blog = ({blogData}) => {
 
     // https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
     useEffect(() => {
@@ -12,7 +12,7 @@ const Blog = ({data}) => {
     }, [])
 
     const {id} = useParams();
-    const blogPost = data.find((blogPost) => blogPost.id === id);
+    const blogPost = blogData.find((blogPost) => blogPost.id === id);
 
     return (
         <>
