@@ -1,60 +1,42 @@
 import Footer from './Footer.js';
 import NavMenu from './NavMenu.js';
-import blogContent from '../blogContent.js';
 import { useEffect } from 'react';
 import '../styles/Blog.css'
+import { useParams } from 'react-router-dom';
 
-const Blog = ({blogLink, setBlogLink}) => {
+const Blog = ({data}) => {
 
     // https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
-    
-    //allows blogLink to persist even if refreshed, getting data from localStorage
-    useEffect (() => {
-        const storedBlogLink = localStorage.getItem('blogLink')
-        if (storedBlogLink) {
-            setBlogLink(storedBlogLink)
-        }
-    }, [setBlogLink])
+
+    const {id} = useParams();
+    const blogPost = data.find((blogPost) => blogPost.id === id);
 
     return (
         <>
-            {/* <a href="#mainContent" className="skipLink">Skip to main content.</a> */}
             <header>
                 <NavMenu />
             </header>
             <main>
                 <section className='blogPostSection'>
-                    {blogContent.map((blogPost) => {
-                        if (blogPost.id === blogLink) {
-                            return (
-                                <div className="dynamicPost" key={blogPost.id}>
-                                    <div className="wrapper">
-                                        <h1 className="title">{blogPost.title}</h1>
-                                    </div>
-                                    <div className="postImageContainer">
-                                        <img src={blogPost.src} alt={blogPost.alt} />
-                                    </div>
-                                    <div className="subtitleContainer">
-                                        <div className="wrapper">
-                                            <p className="subtitle">{blogPost.subtitle}</p>
-                                        </div>
-                                    </div>
-                                    <div className="wrapper">
-                                        <div className="postText">{blogPost.content}</div>
-                                    </div>
-                                </div>
-
-                            )
-                        } else {
-                            return (
-                                null
-                            )
-                        }
-                    })
-                    }
+                    <div className="dynamicPost" key={blogPost.id}>
+                        <div className="wrapper">
+                            <h1 className="title">{blogPost.title}</h1>
+                        </div>
+                        <div className="postImageContainer">
+                            <img src={blogPost.src} alt={blogPost.alt} />
+                        </div>
+                        <div className="subtitleContainer">
+                            <div className="wrapper">
+                                <p className="subtitle">{blogPost.subtitle}</p>
+                            </div>
+                        </div>
+                        <div className="wrapper">
+                            <div className="postText">{blogPost.content}</div>
+                        </div>
+                    </div>
                 </section>
             </main>
 

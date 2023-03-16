@@ -29,7 +29,7 @@ const BlogList = ({setBlogLink, blogLink}) => {
                                         <div className="blogText">
                                             <p>{blogPost.previewText}</p>
                                             {/* Finds the id of the clicked link and changes the state of the BlogLink to the target id */}
-                                            <Link to="/blog/" id={blogPost.id} onClick={clickHandler}>{blogPost.title}</Link>
+                                            <Link to={`/blog/${blogPost.id}`} id={blogPost.id}>{blogPost.title}</Link>
                                         </div>
                                     </div>
                                 )
