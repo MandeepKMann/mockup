@@ -14,9 +14,9 @@ const BlogList = () => {
                         <div className="line lineTwo"></div>
                 
                         <div className="blogList">
-                            {blogData.map((blogPost, index) => {
+                            {blogData.map((blogPost) => {
                                 return (
-                                    <div className="blogInfo" key={index}>
+                                    <div className="blogInfo" key={blogPost.id}>
                                         <div className="blogImgContainer">
                                             <img src={blogPost.previewImg} alt={blogPost.alt} />
                                         </div>
