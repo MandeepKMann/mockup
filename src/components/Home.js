@@ -8,7 +8,7 @@ import carouselData from '../carouselData.js'
 import { useEffect } from 'react';
 
 
-const Home = () => {
+const Home = ({blogData}) => {
     
     // https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
     useEffect(() => {
@@ -23,7 +23,7 @@ const Home = () => {
             </header>
             <main>
                 <Carousel images={carouselData} />
-                <BlogList />
+                <BlogList blogData={blogData} />
             </main>
             <Footer />
         </>

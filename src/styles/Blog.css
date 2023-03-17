@@ -1,5 +1,9 @@
 /* Blog Post Styles */
 
+.blogPostSection {
+    padding: 50px 0px
+}
+
 .dynamicPost {
     display: flex;
     flex-direction: column;
@@ -44,6 +48,28 @@
 
 span {
     font-weight: bold;
+}
+
+.errorMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorMessage h3 {
+    text-align: center;
+}
+
+.errorImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.errorImageContainer img {
+    max-width: 800px;
 }
 
 @media (max-width: 1000px) {

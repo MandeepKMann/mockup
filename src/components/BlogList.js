@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import blogData from "../blogData.js";
 import '../styles/BlogList.css';
 
-const BlogList = () => {
+const BlogList = ({blogData}) => {
 
     return (
         <section className="blogListSection">
@@ -10,9 +9,11 @@ const BlogList = () => {
                 <h3>Coluptate velit esse cillum</h3>
 
                     <div className="blogListContainer">
+                        {/* dividers styled in CSS */}
                         <div className="line lineOne"></div>
                         <div className="line lineTwo"></div>
                 
+                        {/* map data from blogList array to create preview and links to blog posts */}
                         <div className="blogList">
                             {blogData.map((blogPost) => {
                                 return (
