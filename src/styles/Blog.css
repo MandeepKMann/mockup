@@ -66,10 +66,13 @@ span {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .errorImageContainer img {
-    max-width: 800px;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
 }
 
 @media (max-width: 1000px) {
