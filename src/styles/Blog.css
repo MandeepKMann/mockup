@@ -1,9 +1,5 @@
 /* Blog Post Styles */
 
-.blogPostSection {
-    padding: 50px 0px
-}
-
 .dynamicPost {
     display: flex;
     flex-direction: column;
